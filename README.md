@@ -46,3 +46,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Hints
+
+- Run "bun nx run-many -t build" to run the build target for every project in the workspace. Run it again to replay the cached computation. https://nx.dev/features/cache-task-results
+- Run "bun nx graph" to see the graph of projects and tasks in your workspace. https://nx.dev/core-features/explore-graph
+- Learn more at https://nx.dev/recipes/adopting-nx/adding-to-existing-project.
