@@ -15,9 +15,7 @@
 
   function submitSelection() {
     if (selectedCount === 0) {
-      alert('Please select at least one mentor.');
-    } else if (selectedCount > 3) {
-      alert('You can only select up to 3 mentors.');
+      alert('Please select a mentor.');
     } else {
       alert('Your selection has been submitted!');
     }
@@ -32,7 +30,9 @@
 
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     <!-- Mentor Card 1 -->
-    <div
+    <a
+      href="#"
+      type="button"
       class="card cursor-pointer rounded-lg border border-gray-200 bg-white shadow-md transition hover:shadow-lg"
       onclick={toggleSelection()}
     >
@@ -43,7 +43,7 @@
           Experience: 5+ years as an AI Researcher
         </p>
       </div>
-    </div>
+    </a>
 
     <!-- Mentor Card 2 -->
     <div

@@ -1,4 +1,4 @@
-<div class="container mx-auto p-6">
+<div class="container mx-auto bg-white p-6">
   <h1 class="mb-6 text-center text-3xl font-bold">Resume Builder</h1>
 
   <form class="rounded-lg bg-white p-6 shadow-lg">
