@@ -109,7 +109,9 @@
     </div>
 
     <div class="form-control">
-      <button class="btn btn-primary w-full">Generate Resume</button>
+      <a href="/choose-a-mentor/" class="btn btn-primary w-full">
+        Generate Resume
+      </a>
     </div>
   </form>
 </div>
