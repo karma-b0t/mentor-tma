@@ -14,8 +14,9 @@
           This bot helps you find an IT mentor
         </h2>
         <h2 class="mx-auto text-3xl font-extrabold text-white md:text-4xl">
-          Upload your CV or fill out a form, and AI will select the perfect
-          mentor for you
+          Upload your CV or fill out a form, and <span
+            class="underline decoration-indigo-500 decoration-4">AI</span
+          > will select the perfect mentor for you
         </h2>
 
         <form
@@ -23,7 +24,7 @@
           class="items-center justify-center gap-x-3 sm:flex"
         >
           <a
-            href="javascript:void(0)"
+            href="/upload/"
             class="flex items-center justify-center gap-x-1 rounded-2xl bg-sky-500 px-9 py-4 text-3xl font-medium text-white duration-150 hover:bg-sky-400 active:bg-sky-600 md:inline-flex md:text-4xl"
           >
             START
