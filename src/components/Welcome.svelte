@@ -6,32 +6,32 @@
   }
 </script>
 
-<div class="bg-gray-900">
+<div class="min-h-screen place-content-center bg-gray-900">
   <section class="relative">
-    <div class="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
-      <div class="space-y-5 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl text-white font-extrabold mx-auto md:text-5xl">
-          This bot helps you find an IT mentor.
+    <div class="relative z-10 mx-auto max-w-screen-xl px-4 py-28 md:px-8">
+      <div class="mx-auto max-w-4xl space-y-10 text-center">
+        <h2 class="mx-auto text-3xl font-extrabold text-white md:text-4xl">
+          This bot helps you find an IT mentor
         </h2>
-        <h2 class="text-3xl text-white font-extrabold mx-auto md:text-4xl">
+        <h2 class="mx-auto text-3xl font-extrabold text-white md:text-4xl">
           Upload your CV or fill out a form, and AI will select the perfect
-          mentor for you.
+          mentor for you
         </h2>
 
         <form
           x-on:submit.prevent
-          class="justify-center items-center gap-x-3 sm:flex"
+          class="items-center justify-center gap-x-3 sm:flex"
         >
           <a
             href="javascript:void(0)"
-            class="flex items-center justify-center gap-x-1 py-3 px-6 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex"
+            class="flex items-center justify-center gap-x-1 rounded-2xl bg-sky-500 px-9 py-4 text-3xl font-medium text-white duration-150 hover:bg-sky-400 active:bg-sky-600 md:inline-flex md:text-4xl"
           >
             START
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              class="w-5 h-5"
+              class="h-5 w-5"
             >
               <path
                 fill-rule="evenodd"
@@ -42,11 +42,11 @@
           </a>
         </form>
         <div
-          class="flex justify-center items-center gap-x-4 text-gray-400 text-sm"
+          class="flex items-center justify-center gap-x-4 text-sm text-gray-400"
         >
           <div class="flex">
             <svg
-              class="w-5 h-5"
+              class="h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -56,7 +56,7 @@
               />
             </svg>
             <svg
-              class="w-5 h-5"
+              class="h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -66,7 +66,7 @@
               />
             </svg>
             <svg
-              class="w-5 h-5"
+              class="h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -76,7 +76,7 @@
               />
             </svg>
             <svg
-              class="w-5 h-5"
+              class="h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -91,7 +91,7 @@
       </div>
     </div>
     <div
-      class="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+      class="absolute inset-0 m-auto h-[357px] max-w-xs blur-[118px] sm:max-w-md md:max-w-lg"
       style="
           background: linear-gradient(
             106.89deg,
