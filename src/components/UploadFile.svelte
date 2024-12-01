@@ -23,6 +23,7 @@
       />
     </div>
   </form>
+  <a href="/fill-out-the-form/" class="link link-info">Fill out the Form</a>
   <a
     href="/fill-out-the-form/"
     class=" flex items-center justify-center gap-x-1 rounded-2xl bg-sky-500 px-9 py-4 text-3xl font-medium text-white duration-150 hover:bg-sky-400 active:bg-sky-600 md:inline-flex md:text-4xl"
