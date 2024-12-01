@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@types/bun": "^1.1.14",
+    "daisyui": "^5.0.0-alpha.42",
     "nx": "20.1.4",
     "prettier": "^3.4.1",
     "prettier-plugin-astro": "^0.14.1",

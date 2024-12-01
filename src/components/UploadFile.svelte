@@ -4,12 +4,30 @@
   }
 </script>
 
-<form x-on:submit.prevent class="items-center justify-center gap-x-3 sm:flex">
-  <a
-    href="/upload/"
-    class="flex items-center justify-center gap-x-1 rounded-2xl bg-sky-500 px-9 py-4 text-3xl font-medium text-white duration-150 hover:bg-sky-400 active:bg-sky-600 md:inline-flex md:text-4xl"
+<div class="min-h-screen place-content-center bg-gray-900">
+  <form
+    x-on:submit.prevent
+    class="pitems-center justify-center gap-x-3 gap-y-4 sm:flex"
   >
-    Upload CV
+    <div class="mx-auto max-w-4xl space-y-10 text-center">
+      <label
+        for="upload"
+        class="mx-auto my-10 text-3xl font-extrabold text-white md:text-4xl"
+      >
+        Upload your CV
+      </label>
+      <input
+        id="upload"
+        type="file"
+        class="file-input file-input-bordered file-input-info w-full max-w-xs"
+      />
+    </div>
+  </form>
+  <a
+    href="/fill-out-the-form/"
+    class=" flex items-center justify-center gap-x-1 rounded-2xl bg-sky-500 px-9 py-4 text-3xl font-medium text-white duration-150 hover:bg-sky-400 active:bg-sky-600 md:inline-flex md:text-4xl"
+  >
+    Fill out the Form
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
@@ -23,9 +41,10 @@
       />
     </svg>
   </a>
-</form>
-<p>or</p>
-<h2>Fill the form</h2>
+
+  <p>or</p>
+  <h2>Fill the form</h2>
+</div>
 
 <style>
   button {
