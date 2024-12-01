@@ -9,6 +9,7 @@ export default defineConfig({
   integrations: [svelte()],
   output: 'static',
   vite: {
+    // @ts-ignore
     plugins: [tailwindcss()],
   },
 });
