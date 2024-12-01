@@ -1,205 +1,257 @@
-<div id="container">
-  <main>
-    <section id="hero">
-      <h1>
-        To get started, open the <code><pre>src/pages</pre></code> directory in your
-        project.
-      </h1>
-      <section id="links">
-        <a class="button" href="https://docs.astro.build">Read our docs</a>
-        <a href="https://astro.build/chat"
-          >Join our Discord <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 127.14 96.36"
-            ><path
+<script>
+  let open = false;
+
+  function toggleMenu() {
+    open = !open;
+  }
+</script>
+
+<div class="bg-gray-900">
+  <header class={open ? 'mx-2 pb-5' : 'hidden'}>
+    <div class="flex items-center justify-between py-5 md:block">
+      <a href="javascript:void(0)">
+        <img
+          src="https://www.floatui.com/logo-dark.svg"
+          width="120"
+          height="50"
+          alt="Float UI logo"
+        />
+      </a>
+      <div class="md:hidden">
+        <button
+          class="menu-btn text-gray-400 hover:text-gray-300"
+          on:click={toggleMenu}
+        >
+          {#if open}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              viewBox="0 0 20 20"
               fill="currentColor"
-              d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-            ></path></svg
-          >
-        </a>
-      </section>
-    </section>
-  </main>
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          {:else}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          {/if}
+        </button>
+      </div>
+    </div>
+  </header>
 
-  <a href="https://astro.build/blog/astro-5-beta/" id="news" class="box">
-    <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-      ><path
-        d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-        fill="#111827"
-      ></path></svg
+  <nav
+    class={open
+      ? 'pb-5 md:text-sm absolute z-20 top-0 inset-x-0 bg-gray-800 rounded-xl mx-2 mt-2 md:mx-0 md:mt-0 md:relative md:bg-transparent'
+      : ''}
+  >
+    <div
+      class="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8"
     >
-    <h2>What's New in Astro 5.0?</h2>
-    <p>
-      From content layers to server islands, click to learn more about the new
-      features and improvements in Astro 5.0
-    </p>
-  </a>
+      <div class="flex items-center justify-between py-5 md:block">
+        <a href="javascript:void(0)">
+          <img
+            src="https://www.floatui.com/logo-dark.svg"
+            width="120"
+            height="50"
+            alt="Float UI logo"
+          />
+        </a>
+        <div class="md:hidden">
+          <button
+            class="menu-btn text-gray-400 hover:text-gray-300"
+            on:click={toggleMenu}
+          >
+            {#if open}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            {:else}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            {/if}
+          </button>
+        </div>
+      </div>
+      <div
+        class="{open
+          ? 'block'
+          : 'hidden'} flex-1 items-center mt-8 md:mt-0 md:flex"
+      >
+        <ul
+          class="flex-1 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0"
+        >
+          <li class="text-gray-300 hover:text-gray-400">
+            <a href="javascript:void(0)" class="block">Features</a>
+          </li>
+          <li class="text-gray-300 hover:text-gray-400">
+            <a href="javascript:void(0)" class="block">Integrations</a>
+          </li>
+          <li class="text-gray-300 hover:text-gray-400">
+            <a href="javascript:void(0)" class="block">Customers</a>
+          </li>
+          <li class="text-gray-300 hover:text-gray-400">
+            <a href="javascript:void(0)" class="block">Pricing</a>
+          </li>
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex"
+            >
+              Get started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative">
+    <div class="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
+      <div class="space-y-5 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl text-white font-extrabold mx-auto md:text-5xl">
+          Build and scale up your startup with the best tools
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-400">
+          Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+        </p>
+        <form
+          x-on:submit.prevent
+          class="justify-center items-center gap-x-3 sm:flex"
+        >
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="w-full px-3 py-2.5 text-gray-400 bg-gray-700 focus:bg-gray-900 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
+          />
+          <button
+            class="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto"
+          >
+            Get started
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </form>
+        <div
+          class="flex justify-center items-center gap-x-4 text-gray-400 text-sm"
+        >
+          <div class="flex">
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+              />
+            </svg>
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+              />
+            </svg>
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+              />
+            </svg>
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+              />
+            </svg>
+          </div>
+          <p><span class="text-gray-100">5.0</span> by over 200 users</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+      style="
+          background: linear-gradient(
+            106.89deg,
+            rgba(192, 132, 252, 0.11) 15.73%,
+            rgba(14, 165, 233, 0.41) 15.74%,
+            rgba(232, 121, 249, 0.26) 56.49%,
+            rgba(79, 70, 229, 0.4) 115.91%
+          );
+        "
+    ></div>
+  </section>
 </div>
-
-<style>
-  #background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: blur(100px);
-  }
-
-  #container {
-    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans',
-      Arial, sans-serif;
-    height: 100%;
-  }
-
-  main {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  #hero {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px;
-  }
-
-  h1 {
-    font-size: 22px;
-    margin-top: 0.25em;
-  }
-
-  #links {
-    display: flex;
-    gap: 16px;
-  }
-
-  #links a {
-    display: flex;
-    align-items: center;
-    padding: 10px 12px;
-    color: #111827;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  #links a:hover {
-    color: rgb(78, 80, 86);
-  }
-
-  #links a svg {
-    height: 1em;
-    margin-left: 8px;
-  }
-
-  #links a.button {
-    color: white;
-    background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-    box-shadow:
-      inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-      inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
-  }
-
-  #links a.button:hover {
-    color: rgb(230, 230, 230);
-    box-shadow: none;
-  }
-
-  pre {
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
-      Consolas, 'DejaVu Sans Mono', monospace;
-    font-weight: normal;
-    background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin: 0;
-  }
-
-  h2 {
-    margin: 0 0 1em;
-    font-weight: normal;
-    color: #111827;
-    font-size: 20px;
-  }
-
-  p {
-    color: #4b5563;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.006em;
-    margin: 0;
-  }
-
-  code {
-    display: inline-block;
-    background:
-      linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-      linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 6px 8px;
-  }
-
-  .box {
-    padding: 16px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 16px;
-    border: 1px solid white;
-  }
-
-  #news {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    max-width: 300px;
-    text-decoration: none;
-    transition: background 0.2s;
-    backdrop-filter: blur(50px);
-  }
-
-  #news:hover {
-    background: rgba(255, 255, 255, 0.55);
-  }
-
-  @media screen and (max-height: 368px) {
-    #news {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    #container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #hero {
-      display: block;
-      padding-top: 10%;
-    }
-
-    #links {
-      flex-wrap: wrap;
-    }
-
-    #links a.button {
-      padding: 14px 18px;
-    }
-
-    #news {
-      right: 16px;
-      left: 16px;
-      bottom: 2.5rem;
-      max-width: 100%;
-    }
-
-    h1 {
-      line-height: 1.5;
-    }
-  }
-</style>
